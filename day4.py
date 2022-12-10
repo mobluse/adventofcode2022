@@ -18,7 +18,7 @@ while  s != '.':
     c = int(s[i0:i1])
     i0 = i1 + 1
     d = int(s[i0:])
-    if (a >= c and b <= d) or (c >= a and d <= b):
+    if a >= c and b <= d or c >= a and d <= b:
         print('%d-%d,%d-%d' % (a, b, c, d))
         sum += 1
     s = input()
