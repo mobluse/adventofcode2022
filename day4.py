@@ -1,20 +1,21 @@
-#!/usr/bin/python
+#!/usr/local/bin/snek
 # cat day4input.txt | ./day4.py
-def index(s, start, ch):
+def instr(start, s, ch):
     for i in range(start, len(s)):
         if s[i] == ch:
             return i
+    return -1
 
 sum = 0
 s = input()
 while  s != '.':
-    i0 = index(s, 0, '-')
+    i0 = instr(0, s, '-')
     a = int(s[0:i0])
     i0 += 1
-    i1 = index(s, i0, ',')
+    i1 = instr(i0, s, ',')
     b = int(s[i0:i1])
     i0 = i1 + 1
-    i1 = index(s, i0, '-')
+    i1 = instr(i0, s, '-')
     c = int(s[i0:i1])
     i0 = i1 + 1
     d = int(s[i0:])
