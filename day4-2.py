@@ -1,5 +1,5 @@
 #!/usr/local/bin/snek  
-# cat day4input.txt | ./day4-2.py
+# cat day4input.txt | snek ./day4-2.py
 def instr(start, s, ch):
     for i in range(start, len(s)):
         if s[i] == ch:
