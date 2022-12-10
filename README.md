@@ -3,3 +3,6 @@ Some of my solutions in [Snek](https://sneklang.org/), but they should also work
 line with a single dot '.', because I read the files using input() and Snek doesn't have exceptions. 
 
 https://adventofcode.com/
+
+I installed Snek in Debian Bullseye Linux by cloning lola, compiling with `make`, and installing with `make install`, and then installing the
+dependancies except lola. Then cloning snek, compiling from `~/snek/ports/posix/` with `make`, and installing with `make install`.
