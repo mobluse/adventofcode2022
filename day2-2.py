@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/local/bin/snek
 # cat day2input.txt | ./day2-2.py
 sum = 0
 s = input()
-while True:
+while s != '.':
     opponent = chr(ord(s[0])+ord('X')-ord('A'))
     if opponent == 'X':
         correct = 'Y'
@@ -36,6 +36,4 @@ while True:
     print(score)
     sum += shape + score
     s = input()
-    if s == '.':
-        break
 print(sum)
