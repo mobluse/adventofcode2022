@@ -1,5 +1,5 @@
 #!/usr/local/bin/snek
-# cat day3input.txt | ./day3-2.py
+# cat day3input.txt | snek ./day3-2.py
 def common(s1, s2, s3):
     for ch in s1:
         if ch in s2 and ch in s3:
