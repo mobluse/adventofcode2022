@@ -24,15 +24,16 @@ while s != None and s != '':
 s = input()
 while s != '.':
     print(s)
-    i = find(s, 'e', 0)
-    n = int(s[i+2:find(s, ' ', i+2)])
-    i = find(s, 'm', i)
-    f = int(s[i+2:find(s, ' ', i+2)])
-    i = find(s, 'o', i)
-    t = int(s[i+2:])
+    i = find(s, 'e', 0) + 2
+    n = int(s[i:find(s, ' ', i)])
+    i = find(s, 'm', i) + 2
+    f = int(s[i:find(s, ' ', i)])
+    i = find(s, 'o', i) + 2
+    t = int(s[i:])
     print('%i,%i,%i' % (n, f, t))
-    m[t-1] += m[f-1][-n:]
-    m[f-1] = m[f-1][:-n]
+    f -= 1
+    m[t-1] += m[f][-n:]
+    m[f] = m[f][:-n]
     print(m)
     s = input()
 r = ''
