@@ -1,5 +1,5 @@
 #!/usr/local/bin/snek
-# cat day1input.txt | ./day1.py
+# cat day1input.txt | snek ./day1.py
 high1 = -1000
 high2 = -2000
 high3 = -3000
