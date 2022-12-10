@@ -7,7 +7,7 @@ def find(s, ch, start):
             return i
     return -1
 
-b = 3
+b = 9
 m = []
 for i in range(b):
     m += ['']
