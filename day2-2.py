@@ -1,5 +1,5 @@
 #!/usr/local/bin/snek
-# cat day2input.txt | ./day2-2.py
+# cat day2input.txt | snek ./day2-2.py
 sum = 0
 s = input()
 while s != '.':
