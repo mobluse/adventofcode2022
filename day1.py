@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/snek
 # cat day1input.txt | ./day1.py
 high1 = -1000
 high2 = -2000
@@ -6,7 +6,7 @@ high3 = -3000
 sum = 0
 s = input()
 while True:
-    if s == '' or s == '.':
+    if s == None or s == '' or s == '.':
         if sum > high1:
             high3 = high2
             high2 = high1
