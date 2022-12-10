@@ -4,5 +4,5 @@ line with a single dot '.', because I read the files using `input()` and Snek do
 
 You get the input data from https://adventofcode.com/.
 
-I installed Snek in Debian Bullseye Linux by cloning Lola, compiling with `make`, and installing with `make install`, and then installing the
-dependancies except `lola`. Then cloning `snek`, compiling from `~/snek/ports/posix/` with `make`, and installing with `make install`.
+I installed Snek in Debian Bullseye Linux by cloning Lola, compiling with `make`, and installing with `sudo make install`, and then installing the
+dependencies except `lola`. Then cloning `snek`, compiling from `~/snek/ports/posix/` with `make`, and installing with `sudo make install`.
