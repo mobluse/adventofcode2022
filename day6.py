@@ -1,5 +1,6 @@
 #!/usr/local/bin/snek
 # cat day6input.txt day6input.txt | snek ./day6.py
+import time
 
 start = time.monotonic()
 n = 4
@@ -118,4 +119,4 @@ for i in range(n-1, len(s)):
         print(i+1)
         break
 input()
-print('%f s' % time.monotonic()-start)
+print('%f s' % (time.monotonic()-start))
